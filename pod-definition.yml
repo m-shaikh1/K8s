@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata: 
   name: my-first-pod
-  label: 
+  labels: 
     app: myFirstPod
     type: network
 spec: 
