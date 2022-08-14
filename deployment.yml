@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nginx-deploy
-          image: nginx:alpine
+          image: nginx:stable
   replicas: 3
   selector:
     matchLabels:
