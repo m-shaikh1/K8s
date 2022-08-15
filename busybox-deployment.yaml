@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
         - name: busybox-image
-          image: ubuntu
-          args:
-          - sleep 3600
+          image: busybox
+          command: ['sh', '-c', 'echo Container 1 is Running ; sleep 3600']
+
   replicas: 3
   selector:
     matchLabels:
