@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: busybox-image
-          image: busybox
+          image: ubuntu
           args:
           - sleep 3600
   replicas: 3
