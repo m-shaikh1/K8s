@@ -15,8 +15,10 @@ spec:
     spec:
       containers:
         - name: nginx-deploy
-          image: nginx:stable
-  replicas: 3
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+  replicas: 1
   selector:
     matchLabels:
       type: frontend
